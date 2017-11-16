@@ -1,0 +1,8 @@
+Value INTERFACE (\S+)
+Value MEDIA (\S+)
+Value SFP (SFP)
+
+Start
+  ^GigabitEthernet${INTERFACE}
+  ^Media type: ${MEDIA}
+  ^The Vendor Private Information is NA, Transceiver Identifier: ${SFP} -> Record
