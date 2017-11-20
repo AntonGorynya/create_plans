@@ -245,7 +245,7 @@ def connect_to_device(ip, device_type):
     device = {'device_type': device_type,
               'ip': ip,
               'username': 'hwswap',
-              'password': 'hwswap123'
+              'password': 'hwswap'
               }
     ssh_connection = netmiko.ConnectHandler(**device)
     #ssh_connection.enable()
